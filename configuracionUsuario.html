@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TP Integrador - Configuracion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styleConfigUsuario.css">
+</head>
+
+
+<body>
+    <!--Navbar-->
+    <div class="div-navbar">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="dietasUsuario.html">Dietas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="agendaUsuario.html">Agenda</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mi cuenta
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="configuracionUsuario.html">Configuración</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="index.html">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-div-config">
+        <form class="form-config">
+            <div class="mb-3">
+                <h1> Datos personales</h1>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Hombre
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Mujer
+                </label>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="inputEdad" class="form-label">Edad (años)</label>
+                <input type="number" class="form-control" id="edad">
+            </div>
+            <div class="mb-3">
+                <label for="inputAltura" class="form-label">Altura (cm)</label>
+                <input type="number" class="form-control" id="altura">
+            </div>
+            <div class="mb-3">
+                <label for="inputPeso" class="form-label">Peso (kg)</label>
+                <input type="number" class="form-control" id="peso">
+            </div>
+            <div class="mb-3">
+                <label for="inputCadera" class="form-label">Cadera (cm)</label>
+                <input type="number" class="form-control" id="cadera">
+            </div>
+            <div class="mb-3">
+                <label for="inputCintura" class="form-label">Cintura (cm)</label>
+                <input type="number" class="form-control" id="cintura">
+            </div>
+            <div class="mb-3">
+                <label for="inputPecho" class="form-label">Pecho (cm)</label>
+                <input type="number" class="form-control" id="pecho">
+            </div>
+            <div class="d-grid gap-2 mx-auto">
+				<button type="button" class="btn btn-primary">Guardar cambios</button>
+			</div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

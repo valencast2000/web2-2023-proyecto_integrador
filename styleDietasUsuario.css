@@ -1,0 +1,74 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body:before {
+    content: '';
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/login-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+    background-color: white;
+}
+
+.cards-list>div {
+    max-width: 750px;
+    max-height: 600px;
+    border: 1px solid #ccc;
+    margin-bottom: 70px;
+}
+
+.card-body-title {
+    text-align: center;
+}
+
+.card-body-subtitle {
+    padding-left: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-know-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-more-info {
+    margin-right: auto;
+    margin: 10px;
+}
+
+.btn-accept-diet {
+    margin-left: auto;
+    margin: 10px;
+}
