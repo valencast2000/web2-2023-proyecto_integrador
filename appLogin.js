@@ -5,3 +5,7 @@ function abrirDietasUsuario() {
 function abrirDietasAdmin() {
     window.open('dietasAdmin.html', '_self');
 }
+
+function abrirLogin() {
+    window.open('index.html', '_self');
+}
