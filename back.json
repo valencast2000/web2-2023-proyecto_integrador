@@ -1,0 +1,122 @@
+{
+  "usuarios": [
+    {
+      "id": "Qrtywa",
+      "email": "pedro@gmail.com",
+      "password": "pedro1234",
+      "nombre": "Pedro",
+      "tipo": "usuario",
+      "sexo": "h",
+      "edad": "24",
+      "altura": "165",
+      "peso": "72",
+      "cadera": "56",
+      "cintura": "46",
+      "pecho": "52",
+      "dieta": "Plan de dieta mediterranea"
+    },
+    {
+      "id": "Qwteqe",
+      "email": "roberto@gmail.com",
+      "password": "roberto1234",
+      "nombre": "Roberto",
+      "tipo": "admin"
+    },
+    {
+      "id": "1hEZ7ba",
+      "email": "testfinal@gmail.com",
+      "password": "test1234",
+      "nombre": "Test",
+      "tipo": "usuario",
+      "sexo": "h",
+      "edad": "22",
+      "altura": "170",
+      "peso": "75",
+      "cadera": "50",
+      "cintura": "50",
+      "pecho": "50",
+      "dieta": "Plan de dieta mediterranea"
+    }
+  ],
+  "dietas": [
+    {
+      "id": 1,
+      "titulo": "Plan de dieta mediterranea",
+      "subtitulo": "La dieta estilo mediterráneo tiene menos carnes y carbohidratos que una dieta típica. También tiene más alimentos a base de vegetales y grasa monoinsaturada.",
+      "descripcion": "La dieta mediterránea está basada en: Comidas a base de vegetales, con sólo pequeñas cantidades de carne de res y pollo; Más porciones de granos enteros, frutas y verduras frescas, nueces y legumbres; Mucho pescado y otros mariscos en lugar",
+      "imagen": "card-1.png"
+    },
+    {
+      "id": 2,
+      "titulo": "Plan de dieta de la zona",
+      "subtitulo": "La dieta de la zona es un régimen alimenticio que se basa, básicamente, en asegurarse de que se cubran las necesidades de los tres macronutrientes básicos: carbohidratos (60%), grasas (10%) y proteínas (30%).",
+      "descripcion": "Proteinas: pollo, pescado, huevos. Carbohidratos: vegetales, fruta. Grasas: nueces, aceite de oliva, palta",
+      "imagen": "card-2.png"
+    },
+    {
+      "titulo": "test de registro de dieta",
+      "subtitulo": "este es el subtitulo de test de registro de dieta",
+      "descripcion": "este es la descripcion de test de registro de dieta",
+      "imagen": "card-img-not-found.png",
+      "id": 3
+    }
+  ],
+  "agenda": [
+    {
+      "id": 1,
+      "email": "pedro@gmail.com",
+      "fecha": "4/6/2023",
+      "nombre": "Aca va el nombre de comida 1",
+      "detalle": "Aca va el detalle de comida 1",
+      "dieta": "Plan de dieta de la zona"
+    },
+    {
+      "id": 2,
+      "email": "pedro@gmail.com",
+      "fecha": "5/6/2023",
+      "nombre": "Aca va el nombre de comida 2",
+      "detalle": "Aca va el detalle de comida 2",
+      "dieta": "Plan de dieta de la zona"
+    },
+    {
+      "email": "testfinal@gmail.com",
+      "fecha": "6/6/2023",
+      "nombre": "test de nombre de alimento",
+      "detalle": "test de descripcion de alimento",
+      "dieta": "Plan de dieta de la zona",
+      "id": 3
+    },
+    {
+      "email": "testfinal@gmail.com",
+      "fecha": "6/6/2023",
+      "nombre": "test de nombre de alimento 2",
+      "detalle": "test de descripcion de alimento 2",
+      "dieta": "Plan de dieta de la zona",
+      "id": 4
+    },
+    {
+      "email": "testfinal@gmail.com",
+      "fecha": "6/6/2023",
+      "nombre": "test de nombre de alimento cambio dieta",
+      "detalle": "test de descripcion de alimento cambio dieta",
+      "dieta": "Plan de dieta mediterranea",
+      "id": 5
+    }
+  ],
+  "revisiones": [
+    {
+      "id": 1,
+      "email": "pedro@gmail.com",
+      "calificacion": "Bien llevada la dieta",
+      "detalle": "placeholder de detalle",
+      "fecha": "7/6/2023"
+    },
+    {
+      "email": "testfinal@gmail.com",
+      "calificacion": "test de calificacion de revision de Test",
+      "detalle": "test de detalles de revision de test",
+      "fecha": "6/6/2023",
+      "id": 2
+    }
+  ]
+}

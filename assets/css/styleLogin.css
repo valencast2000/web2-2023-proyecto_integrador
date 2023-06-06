@@ -9,7 +9,7 @@ body:before {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background-image: url(images/login-image.jpg);
+	background-image: url(../images/login-image.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -28,4 +28,10 @@ body:before {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: white;
+}
+
+.error-message {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
 }

@@ -5,7 +5,7 @@
     <title>TP Integrador - Configuracion</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styleConfigUsuario.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styleConfigUsuario.css">
 </head>
 
 
@@ -52,48 +52,49 @@
                 <h1> Datos personales</h1>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
+                <input class="form-check-input" type="radio" name="sexRadios" id="Radios1" value="h">
+                <label class="form-check-label" for="Radios1">
                   Hombre
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
+                <input class="form-check-input" type="radio" name="sexRadios" id="Radios2" value="m">
+                <label class="form-check-label" for="Radios2">
                   Mujer
                 </label>
             </div>
             <br>
             <div class="mb-3">
                 <label for="inputEdad" class="form-label">Edad (años)</label>
-                <input type="number" class="form-control" id="edad">
+                <input type="number" class="form-control" id="inputEdad">
             </div>
             <div class="mb-3">
                 <label for="inputAltura" class="form-label">Altura (cm)</label>
-                <input type="number" class="form-control" id="altura">
+                <input type="number" class="form-control" id="inputAltura">
             </div>
             <div class="mb-3">
                 <label for="inputPeso" class="form-label">Peso (kg)</label>
-                <input type="number" class="form-control" id="peso">
+                <input type="number" class="form-control" id="inputPeso">
             </div>
             <div class="mb-3">
                 <label for="inputCadera" class="form-label">Cadera (cm)</label>
-                <input type="number" class="form-control" id="cadera">
+                <input type="number" class="form-control" id="inputCadera">
             </div>
             <div class="mb-3">
                 <label for="inputCintura" class="form-label">Cintura (cm)</label>
-                <input type="number" class="form-control" id="cintura">
+                <input type="number" class="form-control" id="inputCintura">
             </div>
             <div class="mb-3">
                 <label for="inputPecho" class="form-label">Pecho (cm)</label>
-                <input type="number" class="form-control" id="pecho">
+                <input type="number" class="form-control" id="inputPecho">
             </div>
             <div class="d-grid gap-2 mx-auto">
-				<button type="button" class="btn btn-primary">Guardar cambios</button>
+				<button type="button" class="btn btn-primary" onclick="modificarConfiguracion()">Guardar cambios</button>
 			</div>
         </form>
     </div>
 
+    <script src="assets/js/appConfiguracionUsuario.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
