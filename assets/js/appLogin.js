@@ -2,7 +2,6 @@ var emailInput = document.getElementById('InputEmail');
 var passwordInput = document.getElementById('InputPassword');
 
 emailInput.addEventListener('input', validarEmailInput);
-passwordInput.addEventListener('input', validarPasswordInput);
 
 function validarEmailInput() {
     var email = emailInput.value;
