@@ -32,7 +32,7 @@ async function login() {
             var response = await fetch("http://localhost:3000/usuarios?email=" + emailInput.value)
             var data = await response.json()
 
-            if (data.length > 0) {
+            if (data.length > 0) {  
                 var usuario = data[0]
 
                 if (usuario.password == passwordInput.value) {

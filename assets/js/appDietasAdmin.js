@@ -58,7 +58,8 @@ async function onStart() {
         fila.appendChild(celdaBtnImagen)
 
         btnImagen.addEventListener('click', function () {
-            window.open('assets/images/' + elemento.imagen, '_blank');
+            const w = window.open("");
+            w.document.write("<title>Imagen</title><img src='data:image/png;base64," + elemento.imagen + "'/>");
         })
 
         var celdaBtnEliminar = document.createElement('td');
@@ -99,29 +100,39 @@ async function agregarDieta() {
 
     if (document.getElementById("InputTitulo").value == ""
         || document.getElementById("InputSubtitulo").value == ""
-        || document.getElementById("InputDescripcion").value == "") {
-        document.getElementById('AgregarError').textContent = 'Fallo al agregar: completa todos los campos necesarios';
+        || document.getElementById("InputDescripcion").value == ""
+        || document.getElementById("InputImagen").files.length === 0) {
+        document.getElementById('AgregarError').textContent = 'Fallo al agregar: completa todos los campos';
         return
     }
 
-    img = "card-img-not-found.png"
+    let reader = new FileReader();
 
-    if(document.getElementById("InputImagen").value != "") {
-        img = document.getElementById("InputImagen").value
+    base64img = "";
+
+    reader.onload = async function () {
+
+        base64img = reader.result.replace("data:", "").replace(/^.+,/, "");
+
+        dieta = {
+            titulo: document.getElementById("InputTitulo").value,
+            subtitulo: document.getElementById("InputSubtitulo").value,
+            descripcion: document.getElementById("InputDescripcion").value,
+            imagen: base64img
+        }
+        
+    
+        await fetch('http://localhost:3000/dietas', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dieta)
+        })
+    
+
     }
 
-    dieta = {
-        titulo: document.getElementById("InputTitulo").value,
-        subtitulo: document.getElementById("InputSubtitulo").value,
-        descripcion: document.getElementById("InputDescripcion").value,
-        imagen: img
-    }
-
-    await fetch('http://localhost:3000/dietas', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(dieta)
-    });
+    reader.readAsDataURL(document.getElementById("InputImagen").files[0]);
+    
 }

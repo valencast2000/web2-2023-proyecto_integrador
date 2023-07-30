@@ -28,7 +28,7 @@ async function onStart() {
         var cardsJSON = await response.json()
 
         cardsJSON.forEach(function (cardJSON) {
-            card = buildCard("card-" + cardJSON.id, "assets/images/" + cardJSON.imagen, cardJSON.titulo, cardJSON.subtitulo, cardJSON.descripcion)
+            card = buildCard("card-" + cardJSON.id, cardJSON.imagen, cardJSON.titulo, cardJSON.subtitulo, cardJSON.descripcion)
             cardsList.appendChild(card);
         });
 
@@ -49,7 +49,9 @@ function buildCard(className, imgSrc, title, subtitulo, descripcion) {
 
     // Crear la etiqueta img y establecer el atributo src
     var img = document.createElement('img');
-    img.src = imgSrc;
+    img.src = `data:image/png;base64,${imgSrc}`;
+    img.style.width = '750px';
+    img.style.height = '400px';
 
     // Agregar la etiqueta img al div de contenedor de imagen
     imgContainerDiv.appendChild(img);
